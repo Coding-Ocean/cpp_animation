@@ -5,6 +5,7 @@
 ANIM::ANIM() {
 }
 /*
+//制作中
 ANIM::ANIM(int numImgs, const char* bodyName, float interval) {
     NumImgs = numImgs;
     Imgs = new int[NumImgs];
@@ -46,29 +47,6 @@ void ANIM::load(const char* path) {
         i++;
     }
 }
-//void ANIM::draw(float px, float py) {
-//    ElapsedTime += delta;
-//    if (ElapsedTime >= Interval) {
-//        ElapsedTime -= Interval;
-//        ++ImgIdx;
-//        if (ImgIdx >= EndIdx) {
-//            ImgIdx = StartIdx;
-//        }
-//    }
-//    image(Imgs[ImgIdx], px, py);
-//}
-////ANIMSクラスから呼び出すメンバ
-//void ANIM::draw(int* imgIdx, float* elapsedTime, float px, float py){
-//    *elapsedTime += delta;
-//    if (*elapsedTime >= Interval) {
-//        *elapsedTime -= Interval;
-//        ++(*imgIdx);
-//        if (*imgIdx >= NumImgs) {
-//            *imgIdx = 0;
-//        }
-//    }
-//    image(Imgs[*imgIdx], px, py);
-//}
 void ANIM::draw(ANIM_DATA* data, float px, float py){
     data->elapsedTime += delta;
     if (data->elapsedTime >= data->interval) {

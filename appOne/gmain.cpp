@@ -14,7 +14,7 @@ void gmain() {
 
     ANIMS* anims = new ANIMS("assets\\player");
     ANIM_DATA data;
-    data.interval = 0.12f;
+    data.interval = 0.1f;
     int animIdx = 0;
     
     initDeltaTime();
@@ -24,6 +24,8 @@ void gmain() {
         bool inputFlag = false;
         if (isPress(KEY_D)) { animIdx = 0; inputFlag = true; }
         if (isPress(KEY_A)) { animIdx = 1; inputFlag = true; }
+        //if (isPress(KEY_S)) { animIdx = 2; inputFlag = true; }
+        //if (isPress(KEY_W)) { animIdx = 3; inputFlag = true; }
         if (inputFlag == false ) {
             data.reset();
         }

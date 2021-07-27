@@ -26,3 +26,10 @@ void ANIMS::load(const char* path){
         i++;
     }
 }
+//getter
+ANIM* ANIMS::anim(int animIdx){
+    if (animIdx >= NumAnims) {
+        return Anims[NumAnims - 1];
+    }
+    return Anims[animIdx];
+}

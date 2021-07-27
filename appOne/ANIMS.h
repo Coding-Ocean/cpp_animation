@@ -9,6 +9,7 @@ public:
     ANIMS(const char* path);
     ~ANIMS();
     void load(const char* path);
-    class ANIM* anim(int animIdx) { return Anims[animIdx]; }
+    //getter
+    class ANIM* anim(int animIdx);
 };
 

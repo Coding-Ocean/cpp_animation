@@ -1,5 +1,5 @@
-//#define 複数のアニメーション
-#define １つのアニメーション
+#define 複数のアニメーション
+//#define １つのアニメーション
 //#define ループしないアニメーション
 
 #ifdef 複数のアニメーション
@@ -65,6 +65,7 @@ void gmain() {
 #include"framework.h"
 #include"window.h"
 #include"graphic.h"
+#include"input.h"
 #include"ANIM.h"
 void gmain() {
     window(200, 200, full);
